@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenBoard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="toolbar">
+        <div class="tool" id="pencil">
+            <img src="images/pencil.png" class="tool-img" alt="pencil">
+            <div class="size-box">
+                <div class="size1 size"></div>
+                <div class="size2 size"></div>
+                <div class="size3 size"></div>
+                <div class="size4 size"></div>
+            </div>
+        </div>
+        <div class="tool" id="eraser">
+            <img src="images/eraser.png" class="tool-img" alt="eraser">
+            <div class="size-box">
+                <div class="size1 size"></div>
+                <div class="size2 size"></div>
+                <div class="size3 size"></div>
+                <div class="size4 size"></div>
+            </div>
+        </div>
+
+        <div class="tool" id="rect">
+            <img src="images/rectangle.png" class="tool-img" alt="rect">
+            <div class="size-box">
+                <div class="size1 size"></div>
+                <div class="size2 size"></div>
+                <div class="size3 size"></div>
+                <div class="size4 size"></div>
+            </div>
+        </div>
+
+        <div class="tool" id="line">
+            <img src="images/two-lines.png" class="tool-img" alt="line">
+            <div class="size-box">
+                <div class="size1 size"></div>
+                <div class="size2 size"></div>
+                <div class="size3 size"></div>
+                <div class="size4 size"></div>
+            </div>
+        </div>
+
+        <div class="tool" id="sticky">
+            <img src="images/sticky-note.png" class = "tool-img" alt="stickynote">
+        </div>
+
+        <!-- <div class="tool" id="download">
+            <img src = "images/download.png" class="tool-img" alt = "download">
+        </div> -->
+        <!-- <div class="tool" id="photo-upload">
+            <img src="images/photo.png" class="tool-img" alt="gallery">
+        </div> -->
+        <div class="color-container">
+            <div class="color red"></div>
+            <div class="color green"></div>
+            <div class="color blue"></div>
+            <div class="color pink"></div>
+            <div class="color lightgreen"></div>
+            <div class="color lightblue"></div>
+            <div class="color black"></div>
+        </div>
+    </div>
+    <canvas></canvas>
+
+    <script src = "jsfiles/setup.js"> </script>
+    <script src="jsfiles/draw.js"> </script>
+    <script src="jsfiles/toolmanip.js"></script>
+    <script src="jsfiles/stickynote.js"></script>
+</body>
+
+</html>

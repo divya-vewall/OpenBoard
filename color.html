@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color</title>
+    <style>
+        .outer{
+            border: 3px solid purple;
+            width:250px;
+            height:60px;
+            display:flex;
+            justify-content:space-evenly;
+            align-items: center;
+        }
+        .red{
+            background-color: red;
+            width:30px;
+            height:30px;
+            border-radius:50%;
+        }
+        .green{
+            background-color: green;
+            width:30px;
+            height:30px;
+            border-radius:50%;
+        }
+        .blue{
+            background-color: blue;
+            width:30px;
+            height:30px;
+            border-radius:50%;
+        }
+        .pink{
+            background-color: lightpink;
+            width:30px;
+            height:30px;
+            border-radius:50%;
+        }
+        .lightgreen{
+            background-color: lightgreen;
+            width:30px;
+            height:30px;
+            border-radius:50%;
+        }
+        .lightblue{
+            background-color: lightblue;
+            width:30px;
+            height:30px;
+            border-radius:50%;
+        }
+        .black{
+            background-color: black;
+            width:30px;
+            height:30px;
+            border-radius:50%;
+        }
+       .color-area{
+        border:1px solid grey;
+        height:100px;
+        width:100px;
+        margin-left:30px;
+        margin-top:30px;
+       }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+        <div class="pink"></div>
+        <div class="lightgreen"></div>
+        <div class="lightblue"></div>
+        <div class="black"></div>
+
+    </div>
+    <div class="color-area"></div>
+    <script>
+        let colorArea = document.querySelector(".color-area");
+        let redColor = document.querySelector(".red");
+        let greenColor = document.querySelector(".green");
+        let blueColor = document.querySelector(".blue");
+        let pinkColor = document.querySelector(".pink");
+        let lightgreenColor = document.querySelector(".lightgreen");
+        let lightblueColor = document.querySelector(".lightblue");
+        let blackColor = document.querySelector(".black");
+        redColor.addEventListener("click", function(){
+            colorArea.style.backgroundColor = "red";
+        })
+        
+        greenColor.addEventListener("click", function(){
+            colorArea.style.backgroundColor = "green";
+        })
+
+        blueColor.addEventListener("click", function(){
+            colorArea.style.backgroundColor = "blue";
+        })
+
+        pinkColor.addEventListener("click", function(){
+            colorArea.style.backgroundColor = "lightpink";
+        })
+
+        lightgreenColor.addEventListener("click", function(){
+            colorArea.style.backgroundColor = "lightgreen";
+        })
+
+        lightblueColor.addEventListener("click", function(){
+            colorArea.style.backgroundColor = "lightblue";
+        })
+
+        blackColor.addEventListener("click", function(){
+            colorArea.style.backgroundColor = "black";
+        })
+    </script>
+</body>
+</html>
